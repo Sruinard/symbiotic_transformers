@@ -17,7 +17,7 @@ class ChefConfig:
     # store the chef state
     chef_state_path = "./ckpt/orbax/managed/"
 
-    def __init__(self, chef_vocab_size):
+    def __init__(self, chef_vocab_size=None):
         self.chef_vocab_size = chef_vocab_size
 
     # computed method as a property
