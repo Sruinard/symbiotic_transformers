@@ -1,19 +1,18 @@
-[tool.poetry]
+[project]
 name = "symbiotic-transformers"
 version = "0.1.0"
 description = ""
-authors = ["Stef Ruinard <stefruinard@hotmail.com>"]
 readme = "README.md"
-packages = [{ include = "symbiotic_transformers" }]
-
-[tool.poetry.dependencies]
-python = "3.9"
-jax = "0.4.16"
-jaxlib = "0.4.16"
-flax = "0.7.4"
-tensorflow = "2.14.0"
-
+dependencies = [
+    "jax",
+    "jaxlib",
+    "flax",
+    "tensorflow",
+    "requests",
+    "ipykernel",
+    "tqdm",
+]
 
 [build-system]
-requires = ["poetry-core"]
-build-backend = "poetry.core.masonry.api"
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
