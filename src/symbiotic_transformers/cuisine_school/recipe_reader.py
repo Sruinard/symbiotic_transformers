@@ -1,10 +1,10 @@
 import os
 import tensorflow as tf
-from symbiotic_transformers.cuisine_school import chef_gpt_brain
+from symbiotic_transformers.cuisine_school import chef
 
 
 class ImitateChefDataset:
-    def __init__(self, brain_assistant: chef_gpt_brain.BrainAssistant):
+    def __init__(self, brain_assistant: chef.BrainAssistant):
         self.brain_assistant = brain_assistant
 
     def to_batch(self, x, window_size, batch_size):

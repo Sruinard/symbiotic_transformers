@@ -1,7 +1,0 @@
-jax
-jaxlib
-flax
-tensorflow
-requests
-ipykernel
-tqdm
